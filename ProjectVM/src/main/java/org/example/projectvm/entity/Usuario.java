@@ -28,6 +28,7 @@ public class Usuario {
     private String correo;
     private String password;
     private String dni;
+    //private String numero;
     private String codigo;
     private String estado;
     private String cantidad_de_horas;
