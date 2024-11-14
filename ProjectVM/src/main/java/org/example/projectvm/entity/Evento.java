@@ -22,6 +22,7 @@ public class Evento {
     @JsonFormat(shape = JsonFormat.Shape.STRING, pattern = "dd-MM-yy")
     private Date fecha;
     private String hora;
+    //private String recursos;
     private String horas_obtenidas;
     private String observaciones;
     @Enumerated(EnumType.STRING)
