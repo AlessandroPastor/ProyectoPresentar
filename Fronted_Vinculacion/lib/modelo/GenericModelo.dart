@@ -10,6 +10,7 @@ class GenericModelo {
 
   GenericModelo.fromJson(Map<String, dynamic> json){
     deleted = json['deleted'];
+    //deleted = json['borar'];
   }
 
   Map<String, dynamic> toJson() {
