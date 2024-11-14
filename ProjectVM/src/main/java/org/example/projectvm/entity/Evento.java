@@ -19,6 +19,7 @@ public class Evento {
     private String nombre_del_evento;
     private String direccion_lugar;
     private String referencia;
+    //Formateamos Para que muestre
     @JsonFormat(shape = JsonFormat.Shape.STRING, pattern = "dd-MM-yy")
     private Date fecha;
     private String hora;

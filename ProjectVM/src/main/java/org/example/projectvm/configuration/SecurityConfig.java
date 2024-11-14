@@ -43,9 +43,8 @@ public class SecurityConfig {
                         .requestMatchers(HttpMethod.POST, "/carreras/**").hasRole("ADMIN")
                         .requestMatchers(HttpMethod.PUT, "/carreras/**").hasRole("ADMIN")
                         .requestMatchers(HttpMethod.DELETE, "/carreras/**").hasRole("ADMIN")
-
                         // Controlador de Eventos (EventoController)
-                        .requestMatchers(HttpMethod.GET, "/evento/**").hasAnyRole("ADMIN", "USER")
+                          .requestMatchers(HttpMethod.GET, "/evento/**").hasAnyRole("ADMIN", "USER")
                         .requestMatchers(HttpMethod.POST, "/evento/**").hasRole("ADMIN")
                         .requestMatchers(HttpMethod.PUT, "/evento/**").hasRole("ADMIN")
                         .requestMatchers(HttpMethod.DELETE, "/evento/**").hasRole("ADMIN")

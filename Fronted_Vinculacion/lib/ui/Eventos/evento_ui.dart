@@ -241,7 +241,7 @@ class _EventoUIState extends State<EventoUI> {
             icon: Icon(Icons.refresh),
             onPressed: _loadData,
           ),
-          if (userRole == 'ROLE_ADMIN')
+          //if (userRole == 'ROLE_ADMIN')
             IconButton(
               icon: Icon(Icons.add),
               onPressed: () => _openForm(context),
