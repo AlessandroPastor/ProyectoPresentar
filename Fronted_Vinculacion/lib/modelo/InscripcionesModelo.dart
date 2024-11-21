@@ -33,6 +33,9 @@ class InscripcionModelo {
     );
   }
 
+  get horasEditadas => null;
+
+
   // Método para convertir el modelo a JSON
   Map<String, dynamic> toJson() {
     return {

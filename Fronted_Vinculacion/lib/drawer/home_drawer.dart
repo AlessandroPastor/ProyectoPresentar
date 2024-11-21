@@ -86,6 +86,11 @@ class _HomeDrawerState extends State<HomeDrawer> {
         labelName: 'Crear Usuario',
         icon: Icon(Icons.person_add),
       ),
+      DrawerList(
+        index: DrawerIndex.Scaner,
+        labelName: 'Scaner Objetos',
+        icon: Icon(Icons.scanner),
+      ),
     ];
   }
 
@@ -365,6 +370,7 @@ enum DrawerIndex {
   Inscripciones,
   Juego,
   CrearUsuario,
+  Scaner,
 }
 
 class DrawerList {

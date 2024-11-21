@@ -1,0 +1,3 @@
+0 Animales
+1 Objetos
+2 Ropa

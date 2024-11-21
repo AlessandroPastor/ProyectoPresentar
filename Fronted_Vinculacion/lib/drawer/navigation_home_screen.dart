@@ -3,14 +3,20 @@ import 'package:flutter/material.dart';
 import 'package:vinculacion/drawer/crear_usuario.dart';
 import 'package:vinculacion/drawer/drawer_user_controller.dart';
 import 'package:vinculacion/drawer/home_drawer.dart';
+import 'package:vinculacion/main.dart';
 import 'package:vinculacion/theme/AppTheme.dart';
 import 'package:vinculacion/ui/Calculadora/Calculadora.dart';
 import 'package:vinculacion/ui/CantidadHoras/Horas.dart';
 import 'package:vinculacion/ui/Carrera/carrera_main.dart';
+import 'package:vinculacion/ui/EscanerObjetos/ScaneerMain.dart';
 import 'package:vinculacion/ui/Eventos/evento_main.dart';
+import 'package:vinculacion/ui/Inscripciones/Inscrpciones.dart';
+import 'package:vinculacion/ui/Juego/Tictatoe.dart';
 import 'package:vinculacion/ui/help_screen.dart';
 
+
 class NavigationHomeScreen extends StatefulWidget {
+
   @override
   _NavigationHomeScreenState createState() => _NavigationHomeScreenState();
 }
@@ -81,9 +87,26 @@ class _NavigationHomeScreenState extends State<NavigationHomeScreen> {
           screenView = CarreraListScreen();
         });
       }
+      else if (drawerIndex == DrawerIndex.Scaner) {
+        setState(() {
+          screenView =  SimpleImageCaptureScreen();
+        });
+      }
       else if (drawerIndex == DrawerIndex.CrearUsuario) {
         setState(() {
           screenView = CrearUsuarioScreen();
+
+        });
+      }
+      else if (drawerIndex == DrawerIndex.Juego) {
+        setState(() {
+          screenView = TicTacToeApp();
+
+        });
+      }
+      else if (drawerIndex == DrawerIndex.Inscripciones) {
+        setState(() {
+          screenView = InscripcionesScreen();
         });
       }
       else {

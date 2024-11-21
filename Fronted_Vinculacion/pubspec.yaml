@@ -66,10 +66,16 @@ dependencies:
   excel: ^2.1.0
   share_plus: ^7.2.2
   file_picker: ^5.3.2
-  image_picker: ^1.0.0
+  image_picker: ^0.8.7+5
   file_selector: ^1.0.0
-  flutter_launcher_icons : ^0.13.1
+  #flutter_launcher_icons: ^0.12.0
   url_launcher: ^6.0.20
+  image: ^3.0.2
+  camera: ^0.10.0+1
+  tflite_flutter: ^0.9.5
+  tflite_flutter_helper: ^0.2.1
+  tflite: ^1.1.2
+
 
 dev_dependencies:
   flutter_test:
@@ -90,10 +96,11 @@ dev_dependencies:
 
 # For information on the generic Dart part of this file, see the
 # following page: https://dart.dev/tools/pub/pubspec
-flutter_icons:
-  android: true
-  ios: true
-  image_path: "assets/imagen/tux.jpg"
+#flutter_icons:
+  #android: true
+  #ios: true
+  #image_path: "assets/imagen/tux.jpg"
+
 # The following section is specific to Flutter packages.
 flutter:
 
@@ -103,6 +110,11 @@ flutter:
   uses-material-design: true
   assets:
     - assets/imagen/
+    - assets/model_unquant.tflite
+    - assets/labels.txt
+
+
+
 
   # To add assets to your application, add an assets section, like this:
   # assets:

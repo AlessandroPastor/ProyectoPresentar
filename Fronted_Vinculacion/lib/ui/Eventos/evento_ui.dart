@@ -61,6 +61,7 @@ class _EventoUIState extends State<EventoUI> {
     print("Rol del usuario cargado: $userRole");
   }
 
+
   Future<void> _loadData() async {
     setState(() => _isLoading = true);
     try {
@@ -235,6 +236,7 @@ class _EventoUIState extends State<EventoUI> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
+        centerTitle: true,
         title: Center(child: Text('Lista de Eventos')),
         actions: [
           IconButton(
